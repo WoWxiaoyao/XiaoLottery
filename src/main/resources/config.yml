@@ -1,0 +1,39 @@
+
+#开奖时间 (秒)
+DrawTime: 600
+
+#每张彩票价格
+TicketCost: 100.0
+
+#允许购买的最大数量(-1则为无限)
+MaxTickets: 100
+
+#玩家购买彩票成功后进行全服公告
+BuyBroadcast: true
+
+#显示在Windows页面的内容
+Text:
+  - "&e价格: &a{money}/张"
+  - "&e购买数量: &a{amount}&7/&c{max}"
+  - "&c奖池金额: &6{money_pool}"
+
+#倒计时提醒 （有玩家购买后才会提醒）
+RemindTimes:
+  - 50
+  - 40
+  - 30
+  - 20
+  - 10
+  - 5
+
+#只有当有玩家在线的情况下才会进行倒计时以及开奖公告
+OnlineBroadcast: false
+
+#重启保护
+Backup: []
+
+#执行任务
+task: []
+
+#配置文件版本
+version: 1.0.0

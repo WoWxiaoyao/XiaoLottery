@@ -1,0 +1,18 @@
+name: XiaoLottery
+main: zbv5.cn.XiaoLottery.Main
+version: 1.0.0
+api: 1.0.0
+author: 逍遥
+depend:
+  - EconomyAPI
+commands:
+  XiaoLottery:
+    description: 逍式彩票
+    aliases: ["cp","Lottery"]
+permissions:
+  Lottery.buy:
+    description: 购买彩票所需权限(包含打开购买页面)
+    default: true
+  Lottery.admin:
+    description: 使用全部功能所需权限
+    default: op
