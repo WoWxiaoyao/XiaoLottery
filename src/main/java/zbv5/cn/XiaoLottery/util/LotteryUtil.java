@@ -25,6 +25,8 @@ public class LotteryUtil
 
     public static double Money = 0;
 
+    public static String Mode = "Random";
+
     public static void BuyTicket(Player p, int Ticket)
     {
         if(Ticket <= 0)
@@ -57,7 +59,7 @@ public class LotteryUtil
         }
     }
 
-    public static void Draw()
+    public static void Draw(String hack)
     {
         if(BuyList.isEmpty())
         {
@@ -82,17 +84,46 @@ public class LotteryUtil
             }
             if(i > 1)
             {
-                int luck = (int)(Math.random()*i);
-                int set = 0;
-                for(String name:BuyList.keySet())
+                if(Mode.equalsIgnoreCase("Random"))
                 {
-                    if(luck == set)
+                    int luck = (int)(Math.random()*i);
+                    int set = 0;
+                    for(String name:BuyList.keySet())
                     {
-                        Winner = name;
-                        break;
+                        if(luck == set)
+                        {
+                            Winner = name;
+                            break;
+                        }
+                        set ++;
                     }
-                    set ++;
+                } else {
+                    List<String> list = new ArrayList<String>();
+                    int tickets = 0;
+                    for(String name:BuyList.keySet())
+                    {
+                        int start = tickets + 1 ;
+                        tickets = tickets + BuyList.get(name);
+                        list.add(name+"/"+start+"/"+tickets);
+                    }
+                    int luck = (int)(Math.random()*tickets)+1;
+
+                    for(String l:list)
+                    {
+                        String[] f = l.split("/");
+                        int a = Integer.parseInt(f[1]);
+                        int b = Integer.parseInt(f[2]);
+                        if( (a <= luck) && (b >= luck))
+                        {
+                            Winner = f[0];
+                            break;
+                        }
+                    }
                 }
+            }
+            if(hack != null)
+            {
+                Winner = hack;
             }
             PrintUtil.PrintBroadcast(Lang.DrawBroadcast.replace("{player}",Winner).replace("{money}",String.valueOf(Money)));
             Player p = Main.getInstance().getServer().getPlayer(Winner);
@@ -137,7 +168,7 @@ public class LotteryUtil
                     }
                     if(runDrawTime == 0)
                     {
-                        Draw();
+                        Draw(null);
                     }
                 }
             }

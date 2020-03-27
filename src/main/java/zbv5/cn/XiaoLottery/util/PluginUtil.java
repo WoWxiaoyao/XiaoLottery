@@ -36,7 +36,7 @@ public class PluginUtil
     public static void reloadLoadPlugin()
     {
         PrintUtil.PrintConsole("&e======== &bXiaoLottery &e> &d开始重载 &e========");
-        LotteryUtil.Draw();
+        LotteryUtil.Draw(null);
         Main.getInstance().getServer().getScheduler().cancelTask(Main.getInstance());
         FileUtil.LoadFile();
         Lang.LoadLang();

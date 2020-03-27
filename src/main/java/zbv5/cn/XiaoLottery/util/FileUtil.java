@@ -25,6 +25,13 @@ public class FileUtil
             }
             config = new Config(new File(Main.getInstance().getDataFolder() + "/config.yml"));
 
+            if(!config.getString("version").equalsIgnoreCase("1.0.1"))
+            {
+                config.set("Mode","Random");
+                config.save();
+                PrintUtil.PrintConsole("&e> &a配置文件已更新至&61.0.1");
+            }
+
             //载入信息
             LotteryUtil.DrawTime = config.getInt("DrawTime");
 
@@ -33,6 +40,15 @@ public class FileUtil
             if(LotteryUtil.MaxTickets < 0)
             {
                 LotteryUtil.MaxTickets = 2147483647;
+            }
+
+            if(config.getString("Mode").equalsIgnoreCase("Random"))
+            {
+                LotteryUtil.Mode = "Random";
+                PrintUtil.PrintConsole("&e> &a当前开奖模式设置为:&6众生平等");
+            } else {
+                LotteryUtil.Mode = "More";
+                PrintUtil.PrintConsole("&e> &a当前开奖模式设置为:&6按票分配");
             }
 
             LotteryUtil.RemindTimes = config.getIntegerList("RemindTimes");

@@ -53,11 +53,29 @@ public class Main extends PluginBase
                 } else {
                     PrintUtil.PrintCommandSender(sender,"&6==== [&bXiaoLottery&6] ====");
                     PrintUtil.PrintCommandSender(sender,"&6/"+label+" &7- &b打开彩票购买页面");
+                    PrintUtil.PrintCommandSender(sender,"&6/"+label+"&a info &7- &b查询彩票信息");
                     PrintUtil.PrintCommandSender(sender,"&6/"+label+"&a buy &e<数量>&7- &b为该玩家手上的物品附魔");
                     PrintUtil.PrintCommandSender(sender,"&6/"+label+"&a draw&7- &b立刻开奖");
+                    if(sender.hasPermission("Lottery.admin"))
+                    {
+                        PrintUtil.PrintCommandSender(sender,"&6/"+label+"&a draw &e<玩家ID>&7- &b黑幕开奖");
+                    }
                     PrintUtil.PrintCommandSender(sender,"&6/"+label+"&c reload &7- &4重载插件配置");
                 }
                 return false;
+            }
+            if(args[0].equalsIgnoreCase("info"))
+            {
+                if(!sender.hasPermission("Lottery.info"))
+                {
+                    PrintUtil.PrintCommandSender(sender, Lang.NoPermission);
+                    return false;
+                }
+                PrintUtil.PrintCommandSender(sender,"&6==== [&bXiaoLottery&6] ====");
+                PrintUtil.PrintCommandSender(sender,"&e距离开奖还有: &a"+LotteryUtil.runDrawTime+"秒");
+                PrintUtil.PrintCommandSender(sender,"&e目前奖金池: &a"+LotteryUtil.Money);
+                PrintUtil.PrintCommandSender(sender,"&e目前参与人数: &a"+LotteryUtil.BuyList.size());
+                return true;
             }
             if(args[0].equalsIgnoreCase("buy"))
             {
@@ -93,7 +111,12 @@ public class Main extends PluginBase
             }
             if(args[0].equalsIgnoreCase("draw"))
             {
-                LotteryUtil.Draw();
+                if(args.length == 2)
+                {
+                    LotteryUtil.Draw(args[1]);
+                } else {
+                    LotteryUtil.Draw(null);
+                }
                 PrintUtil.PrintCommandSender(sender, Lang.Executed);
                 return true;
             }

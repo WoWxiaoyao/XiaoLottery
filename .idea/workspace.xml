@@ -6,7 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d88d431b-9e71-42c0-84f4-c03e742c4cc8" name="Default Changelist" comment="" />
+    <list default="true" id="d88d431b-9e71-42c0-84f4-c03e742c4cc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/util/LotteryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/util/LotteryUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/util/PluginUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/util/PluginUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +28,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZXBBZtnu2h2ZENx01meI1HPNZh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,6 +40,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Lib/nukkit-1.0-SNAPSHOT.jar!/" />
@@ -53,7 +67,8 @@
       <workItem from="1584975425079" duration="2281000" />
       <workItem from="1585012893026" duration="11070000" />
       <workItem from="1585100056747" duration="22707000" />
-      <workItem from="1585180478731" duration="5655000" />
+      <workItem from="1585180478731" duration="7361000" />
+      <workItem from="1585307479555" duration="2867000" />
     </task>
     <servers />
   </component>
@@ -73,6 +88,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="880" y="138" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585065176622" />
+    <state x="334" y="126" key="new project wizard" timestamp="1585228232606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="126" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1585228232606" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585154220263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

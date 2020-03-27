@@ -1,6 +1,6 @@
 name: XiaoLottery
 main: zbv5.cn.XiaoLottery.Main
-version: 1.0.0
+version: 1.0.1
 api: 1.0.0
 author: 逍遥
 depend:
@@ -12,6 +12,9 @@ commands:
 permissions:
   Lottery.buy:
     description: 购买彩票所需权限(包含打开购买页面)
+    default: true
+  Lottery.info:
+    description: 使用指令查看本期彩票信息
     default: true
   Lottery.admin:
     description: 使用全部功能所需权限
