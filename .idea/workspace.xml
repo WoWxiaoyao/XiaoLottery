@@ -7,13 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d88d431b-9e71-42c0-84f4-c03e742c4cc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/util/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/util/LotteryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/util/LotteryUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/util/PluginUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbv5/cn/XiaoLottery/util/PluginUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +63,9 @@
       <workItem from="1585012893026" duration="11070000" />
       <workItem from="1585100056747" duration="22707000" />
       <workItem from="1585180478731" duration="7361000" />
-      <workItem from="1585307479555" duration="2867000" />
+      <workItem from="1585307479555" duration="3471000" />
+      <workItem from="1585315554143" duration="371000" />
+      <workItem from="1585320743701" duration="264000" />
     </task>
     <servers />
   </component>
@@ -80,18 +77,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585190788875" />
-    <state x="539" y="265" key="FileChooserDialogImpl" timestamp="1584975486945">
+    <state x="539" y="265" key="FileChooserDialogImpl" timestamp="1585315914119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="265" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584975486945" />
+    <state x="539" y="265" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585315914119" />
     <state x="880" y="138" key="SettingsEditor" timestamp="1585065176622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="880" y="138" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585065176622" />
-    <state x="334" y="126" key="new project wizard" timestamp="1585228232606">
+    <state x="334" y="126" key="new project wizard" timestamp="1585315924325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="126" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1585228232606" />
+    <state x="334" y="126" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1585315924325" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585154220263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

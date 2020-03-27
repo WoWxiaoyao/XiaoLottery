@@ -15,6 +15,7 @@ public class PluginUtil
         } else {
             PrintUtil.PrintConsole("&c&l× &e未检测到前置插件 EconomyAPI 插件卸载！");
             Main.getInstance().getServer().getPluginManager().disablePlugin(Main.getInstance());
+            return;
         }
         FileUtil.LoadFile();
         Lang.LoadLang();
